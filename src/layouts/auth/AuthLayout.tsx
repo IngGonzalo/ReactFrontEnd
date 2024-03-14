@@ -1,5 +1,5 @@
 import { Toaster } from "sonner"
-import Logo from '../../assets/logo.svg'
+import  Logo  from "../../assets/logo.svg"
 import { Outlet } from "react-router-dom"
 
 

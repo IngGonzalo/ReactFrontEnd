@@ -40,38 +40,35 @@ export const LoginForm = () => {
     
     
     return (
-        <div className='login__form'>
-            <h3 className='font-bold text-2xl mb-4'>Inicia Sesion</h3>
+        
+      <div className="login__form">
+        <h3 className="font-bold text-2xl mb-4"> Inicia Sesion</h3>
+         <form noValidate onSubmit={handleSubmit} className="space-y-4">
+            <Input
+                name="email"
+                isRequired
+                type="email"
+                size="sm"
+                label="Correo electronico"
+            />
+            <Input
+                name="password" 
+                isRequired
+                type="password"
+                size="sm"
+                label="Contraseña"
+            />
+            <Button
+                isLoading={ isLoading }
+                type="submit"
+                fullWidth
+                className="btn-primary"
+            >
+                Iniciar Sesion
+            </Button>
 
+         </form>
 
-            <form noValidate onSubmit={handleSubmit} className='space-y-4'>
-                
-                <Input
-                    name='email'
-                    isRequired
-                    type='email'
-                    size='sm'
-                    label="Correo electrónico"
-                />
-
-                <Input
-                    name='password'
-                    type='password'
-                    isRequired
-                    size='sm'
-                    label="Contraseña"
-                />
-
-                <Button
-                    isLoading={ isLoading }
-                    type='submit'
-                    fullWidth
-                    className='btn-primary'
-                >
-                    Iniciar Sesion
-                </Button>
-            </form>
-            
-        </div>
+      </div>
     )
 }
