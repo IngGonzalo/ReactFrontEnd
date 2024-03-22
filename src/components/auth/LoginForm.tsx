@@ -1,6 +1,7 @@
 import { Input, Button } from "@nextui-org/react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { useAuthStore } from '../../stores/auth';
 
 
 
@@ -8,7 +9,7 @@ import { toast } from "sonner";
 
 export const LoginForm = () => {
     
-    
+    const login = useAuthStore( state => state.login );
     const [isLoading, setIsLoading] = useState(false);
 
 
