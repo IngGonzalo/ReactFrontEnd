@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import { CategoriesPage, LoginPage } from "../pages";
 import { AuthLayout } from "../layouts";
+import { RootLayout } from "../layouts/root/RootLayout";
 
 
 
@@ -12,8 +13,8 @@ export const router = createBrowserRouter([
         children: [
             // RUTAS DASHBOARD
             {
-                
-                path:'admin',
+                path: 'admin',
+                element: <RootLayout/>,
                 children: [
                     {
                         path: 'categories',
@@ -24,7 +25,7 @@ export const router = createBrowserRouter([
 
             // RUTAS AUTH
             {
-                path: "auth",
+                path: 'auth',
                 element: <AuthLayout/>,
                 children: [
                     {
@@ -32,7 +33,8 @@ export const router = createBrowserRouter([
                         element: <LoginPage/>
                     }
                 ]
-            }        
+            }
+        
         ]
     }
 ]);
