@@ -1,7 +1,7 @@
 import { Input, Button } from "@nextui-org/react";
 import { useState } from "react";
 import { toast } from "sonner";
-import { useAuthStore } from '../../stores/auth';
+import { useAuthStore } from '../../stores';
 
 
 

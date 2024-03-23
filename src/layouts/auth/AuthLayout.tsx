@@ -3,7 +3,7 @@ import Logo from '../../assets/logo.svg'
 import { Toaster } from 'sonner'
 import { Navigate, Outlet } from "react-router-dom"
 
-import { useAuthStore } from "../../stores/auth"
+import { useAuthStore } from "../../stores"
 import { CircularProgress } from "@nextui-org/react"
 
 

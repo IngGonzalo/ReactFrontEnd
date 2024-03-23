@@ -1,7 +1,7 @@
 import { Toaster } from 'sonner';
 import { Navigate, Outlet } from 'react-router-dom';
 
-import { useAuthStore } from '../../stores/auth';
+import { useAuthStore } from '../../stores';
 import { SideMenu } from '../../components';
 import { CircularProgress } from '@nextui-org/react';
 

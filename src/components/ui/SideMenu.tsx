@@ -1,5 +1,5 @@
 import { Button } from "@nextui-org/react";
-import { useAuthStore } from "../../stores/auth";
+import { useAuthStore } from "../../stores";
 import { Link, useLocation } from "react-router-dom";
 
 import Logo from '../../assets/logo.svg'
